@@ -18,3 +18,22 @@
 
 // for loop practice start
 
+var direction = ['south', 'west', 'north'];
+var rightDirection = prompt('Enter Direction').toLowerCase();
+
+var isCorrect = false; 
+
+for (var i = 0; i < direction.length; i++) {
+    if (rightDirection === direction[i]) {
+        isCorrect = true; 
+        break; 
+    }
+}
+
+if (isCorrect) {
+    alert('You are correct');
+} else {
+    alert('You are wrong');
+}
+
+// for loop practice ends
